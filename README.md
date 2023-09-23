@@ -7,13 +7,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-##
-
-```html
-<!--<link rel="shortcut icon" href="favicon.ico" />-->
-<link rel="icon" href="./favicon.png" />
-```
-
+## 프로젝트 설치
 ```bash
 #1 vite 설치
 npm init vite
