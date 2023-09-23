@@ -30,7 +30,7 @@ npm install axios @reduxjs/toolkit react-icons react-loading-skeleton sass react
 ```
 
 ### react-router-dom 세팅
-src > App.jsx 
+`src > App.jsx `
 
 ``` javascript
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -66,7 +66,8 @@ export default App
 ```
 
 ### global.scss 세팅
-src > main.jsx 
+ 
+`src > main.jsx`
 ``` javascript
 import React from 'react'
 import ReactDOM from 'react-dom/client'
