@@ -177,3 +177,8 @@ export default Form
 10. 새 제공업체 추가 > 이메일/비밀번호 클릭 > 사용설정 활성화
 
 
+### 리덕스 사용을 위해 세팅하기
+
+1. `src > store > index.js` 생성
+2. `src > store > 각폴더 하위에 ---.slice.js` 생성하기
+3. `npm install react-redux` 설치
