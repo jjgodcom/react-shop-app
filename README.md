@@ -25,7 +25,7 @@ JavaScript
 npm install
 
 ### 패키지 설치
-npm install axios @reduxjs/toolkit react-icons react-loading-skeleton sass react-router-dom
+npm install axios @reduxjs/toolkit react-icons react-loading-skeleton sass react-router-dom react-hook-form
 
 ```
 
