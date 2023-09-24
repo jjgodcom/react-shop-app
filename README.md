@@ -160,3 +160,16 @@ const Form = ({title}) => {
 
 export default Form
 ```
+
+### 파이어 베이스 연결
+
+[파이어베이스](https://firebase.google.com/?hl=ko) 접속후 프로젝트 생성하기
+
+1. 프로트젝트 이름 : react-shop-app
+2. 애널리틱스 체크 해제
+3. 프로젝트 생성
+4. 생성된 프로젝트에서 웹아이콘 클릭
+5. 앱이름 react-shop-app
+6. `npm install firebase` 설치
+7. `src > firebase.js` 파일 추가 및 파이어베이스에 있는 코드 붙여넣기
+8. 붙여넣기한 `src > firebase.js` 파일에 반드시 `export default app;` 마지막에 추가하기
