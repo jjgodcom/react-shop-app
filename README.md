@@ -25,7 +25,7 @@ JavaScript
 npm install
 
 ### 패키지 설치
-npm install axios @reduxjs/toolkit react-icons react-loading-skeleton sass react-router-dom react-hook-form
+npm install axios @reduxjs/toolkit react-icons react-loading-skeleton sass react-router-dom react-hook-form firebase
 
 ```
 
@@ -173,3 +173,7 @@ export default Form
 6. `npm install firebase` 설치
 7. `src > firebase.js` 파일 추가 및 파이어베이스에 있는 코드 붙여넣기
 8. 붙여넣기한 `src > firebase.js` 파일에 반드시 `export default app;` 마지막에 추가하기
+9. 빌드 > Authentication > 시작하기
+10. 새 제공업체 추가 > 이메일/비밀번호 클릭 > 사용설정 활성화
+
+

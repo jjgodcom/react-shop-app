@@ -3,7 +3,7 @@ import styles from './Form.module.scss'
 import { useForm } from 'react-hook-form'
 
 // SignUp, SignIn 에서 전달받은 prop값 : title
-const Form = ({title}) => {
+const Form = ({title, getDataForm, firebaseError}) => {
 
   // React Hook Form 을 이용한 유효성 체크
   const {register, handleSubmit, formState: {errors}, reset} = useForm({
@@ -13,6 +13,9 @@ const Form = ({title}) => {
   // 작성한 input의 value값 받아올것임
   const onSubmit = ({email, password}) => {
     console.log(email,password)
+    // 버튼클릭시 
+    getDataForm(email,password);
+    reset();
   }
 
   // ...register 로 추가하기
@@ -23,8 +26,8 @@ const Form = ({title}) => {
   const userPassword = {
     required: "필수 필드입니다.",
     minLength: {
-      value: 4,
-      message: "최소 4자입니다."
+      value: 6,
+      message: "최소 6자입니다."
     }
   }
 
@@ -63,7 +66,10 @@ const Form = ({title}) => {
       </div>
 
       <button type="submit">{title}</button>
-      <span className={styles.form_error}></span>
+      {/* 파이어베이스 에러가 있을때 출력 */}
+      {firebaseError && (
+        <span className={styles.form_error}>{firebaseError}</span>
+      )}
     </form>
   )
 }
